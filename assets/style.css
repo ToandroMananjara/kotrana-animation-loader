@@ -144,7 +144,7 @@ to{
 
 .container-3 .item-3-1 i{
        font-size:40px;
-       background:#50514F;
+       background:rgb(255,193,7);
        color: #FF0000; 
        animation: deplacer 3s infinite backwards;     
 }
@@ -275,7 +275,132 @@ to{
        }
    }
 
+   .container-7{
+    width: 90%;
+    height: 21px;
+    position: relative;
+    border-bottom: solid 1px #FCEFEF;
+    border-radius: 50px;
+    box-shadow: inset 5px 10px 10px #0496FF; 
 
+}
+.item-7-1{
+    width: 40px;
+    height: 20px;
+    position: absolute; 
+    background: #fff;
+    border: solid 1px black;
+    border-radius: 50px;
+    box-shadow: 0px 0px 5px;
+    animation: loader-4 2s infinite backwards; 
+}
+ @keyframes loader-4 {
+    from{
+        /* transform: rotate(0); */
+         left:0;
+    }
+    to{
+        /* transform: rotate(360deg); */
+        left: calc(100% - 40px);
+    }
+ }
+
+ .container-8{
+    width: 90%;
+    height: 20px;
+    position: relative;
+    border-radius: 50px;
+ }
+ .item-8-1{
+    width: 50px;
+    height: 20px;
+    position: absolute; 
+    left: 0; 
+    /* z-index: 1; */
+    background:#fff!important;
+    border-radius: 50px;
+    animation: loader-8-1 5s linear infinite backwards ; 
+ }
+ .container-8 .item-8-2{
+    position: relative;
+    /* z-index: 0; */
+ }
+.item-8-2 .loading-l{
+    position: relative;
+    animation: loading-8-2 1s linear infinite backwards;
+    animation-delay: 0.2s;
+    }
+    .item-8-2 .loading-o{
+    position: relative;
+    animation: loading-8-2 2s linear infinite backwards;
+    animation-delay: 0.4s;
+    }
+    .item-8-2 .loading-a{
+    position: relative;
+    animation: loading-8-2 2s linear infinite backwards;
+    animation-delay: 0.6s;
+    }
+    
+    @keyframes loading-8-2 {
+    from{
+       position: relative; 
+    }
+    to{
+        position: relative;
+        z-index: -1; 
+       
+    }
+    }   
+ @keyframes loader-8-1 {
+    from{
+        width: 0;
+    }
+    to{
+        width: 100%;
+    }
+ }
+
+.container-9{
+    width: 50px;
+    height: 50px;
+    position: relative;
+    border: solid 1px #fff;
+    animation: loader 2s linear infinite backwards;
+}
+.item-9-1{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    border: solid 1px #000;
+    transform: rotate(45deg);
+    /* animation: loader 2s infinite backwards; */
+}
+.item-9-2{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    border-radius: 50%;
+    background: #000;
+}
+
+.item-10-1,.item-10-2,.item-10-3{
+    width: 50px;
+    height: 50px;
+    background: rgb(255,193,7);
+    margin: 5px;
+    transform: rotate(45deg);
+    animation: loader-10 2s linear infinite alternate;
+}
+@keyframes loader-10 {
+    from{
+        transform: rotate(0);
+        border-radius: 0;
+    }
+    to{
+        transform: rotate(360deg);
+        border-radius: 50%;
+    }
+}
    footer{
        width: 100%;
        height: 150px;
