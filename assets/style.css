@@ -307,7 +307,7 @@ to{
     border: solid 1px transparent;
     border-radius: 50px;
     box-shadow: 0px 0px 5px;
-    animation: loader-7 2s infinite backwards; 
+    animation: loader-7 0.8s infinite backwards; 
 }
  @keyframes loader-7 {
     from{
@@ -504,13 +504,13 @@ to{
     left: 0;
     background: var(--red); 
     border-radius: 50%;  
-    animation: loader-13-1 2s infinite linear;
+    animation: loader-13-1 2s infinite alternate;
 }
 .item-13-2{
     right: 0;
     background:#fff;
     border-radius: 50%;
-    animation: loader-13-2 2s infinite linear;
+    animation: loader-13-2 2s infinite alternate;
 }
 
 @keyframes loader-13-1 {
@@ -518,7 +518,7 @@ to{
        left: 0;
     }
     to{
-       left: calc(50% - 48px);
+       left: calc(50% - 50px);
     }
 }
 @keyframes loader-13-2 {
@@ -526,7 +526,7 @@ to{
         right: 0;
     }
     to{
-       right: calc(50% - 48px);
+       right: calc(50% - 50px);
     }
 }
 
