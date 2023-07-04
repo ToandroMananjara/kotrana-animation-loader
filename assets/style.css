@@ -372,17 +372,16 @@ to{
         width: 100%;
     }
  }
-
-.container-9{
+.container-9,.item-9-1{
     width: 70px;
     height: 70px;
+}
+.container-9{
     position: relative;
     border: solid 1px var(--blue);
     animation: loader 2s linear infinite backwards;
 }
 .item-9-1{
-    width: 70px;
-    height: 70px;
     position: absolute;
     border: solid 1px var(--red);
     transform: rotate(45deg);
@@ -414,46 +413,32 @@ to{
         background: var(--red);
     }
 }
-.container-11{
-    width: 200px;
-    height: 200px;
-    position: relative;
-    bottom: -25%;
-    border:solid 20px transparent;
-    border-top: solid 20px #fff;
-    border-radius: 50%;
-    animation: loader-11 2s infinite backwards; 
-    animation-delay: 1.4s;
-    margin-bottom: -50px;
-}
- .item-11-1{
-    width: 150px;
-    height: 150px;
+.container-11,.item-11-1,.item-11-2,.item-11-3{
     position: relative;
     border:solid 20px transparent;
     border-top: solid 20px var(--blue);
     border-radius: 50%;
-    animation: loader-11 2s infinite backwards;
+    animation: loader-11 2s infinite backwards; 
+}
+.container-11{
+    width: 200px;
+    height: 200px;
+    bottom: -25%;
+    animation-delay: 1.4s;
+}
+ .item-11-1{
+    width: 150px;
+    height: 150px;
     animation-delay: 1s;
 } 
 .item-11-2{
     width: 100px;
     height: 100px;
-    position: relative;
-    border:solid 20px transparent;
-    border-top: solid 20px var(--blue);
-    border-radius: 50%;
-    animation: loader-11 2s infinite backwards; 
     animation-delay: 0.8s;
 }
 .item-11-3{
     width: 50px;
     height: 50px;
-    position: relative;
-    border:solid 20px transparent;
-    border-top: solid 20px var(--blue);
-    border-radius: 50%;
-    animation: loader-11 2s infinite backwards; 
     animation-delay: 0.4s;
 }
 @keyframes loader-11 {
@@ -510,24 +495,22 @@ to{
     width: 100%;
     position: relative;
 }
-.item-13-1{
+.item-13-1,.item-13-2{
     width: 50px;
     height: 50px;
     position:absolute;
+}
+.item-13-1{
     left: 0;
     background: var(--red); 
     border-radius: 50%;  
     animation: loader-13-1 2s infinite linear;
 }
 .item-13-2{
-    width: 50px;
-    height:50px;
-    position: absolute;
     right: 0;
     background:#fff;
     border-radius: 50%;
     animation: loader-13-2 2s infinite linear;
-
 }
 
 @keyframes loader-13-1 {
