@@ -2,6 +2,13 @@
     font-family: astonpoliz;
     src: url(./fonts/Astonpoliz/Astonpoliz.otf),url(./fonts/Astonpoliz/Astonpoliz.ttf);
 }
+:root{
+    --primary-color:#466365;
+    --secondary-color:#B49A67;
+    /* --blue:#17BEBB; */
+    --blue:#FCEFEF;
+    --red:#D62246;
+}
 *{
     text-decoration: none;
     list-style: none;
@@ -23,19 +30,26 @@ body{
    position: relative;
    border: 1px solid #fff;
 }
+.item-0{
+    background: var(--secondary-color);
+}
+.item-1{
+    background: var(--primary-color);
+}
 .container-item-1 {
    position: absolute;
    width: 82px;
    height: 82px; 
-   background: linear-gradient(360deg,#0496FF 50%,transparent 50%),linear-gradient(transparent 50%,#0496FF 50%);
+   background: linear-gradient(360deg,var(--blue) 50%,transparent 50%),linear-gradient(transparent 50%,var(--blue) 50%);
    border-radius: 50%;
    animation: loader 1s infinite linear;    
 }
-.items-1{
+.items-1-1{
 height: 70px;
 width: 70px;
 position: absolute;
-/* color: #FCEFEF; */
+background: var(--secondary-color);
+color: var(--primary-color);
 border-radius: 50%;
 animation: loader-1 2s infinite backwards;
 }
@@ -86,11 +100,11 @@ to{
    height:50px;
 }
 .item-2-1{
-   background: #FF0000;
+   background: var(--red);
    animation: translate-1 5s infinite backwards;
 }
 .item-2-2{
-   background: #0496FF;
+   background:var(--blue);
    animation: translate-2 5s infinite backwards;
 }
 
@@ -144,14 +158,14 @@ to{
 
 .container-3 .item-3-1 i{
        font-size:40px;
-       background:rgb(255,193,7);
-       color: #FF0000; 
+       background:transparent;
+       color: var(--red); 
        animation: deplacer 3s infinite backwards;     
 }
 .container-3 .item-3-2{
    width: fit-content;
    height: 10px;
-   background: #0496FF;
+   background:var(--blue);
    border-radius: 20px;
    animation: loader-3 3s infinite backwards;
 }
@@ -181,14 +195,14 @@ to{
        position: relative;
        border-bottom: solid 1px #FCEFEF;
        border-radius: 50px;
-       box-shadow: inset 5px 10px 10px #0496FF; 
+       box-shadow: inset 5px 10px 10px var(--blue); 
 
    }
    .item-4-1{
        width: 50px;
        height: 50px;
        position: absolute; 
-       background: linear-gradient(90deg,#FF0000 50%,#FCEFEF 50%);
+       background: linear-gradient(90deg,var(--red) 50%,#FCEFEF 50%);
        border: solid 1px black;
        border-radius: 50%;
        box-shadow: 0px 0px 5px;
@@ -226,10 +240,10 @@ to{
 
    }
    .item-5-1,.item-5-4{
-       background: #FF0000;
+       background: var(--red);
    }
    .item-5-2,.item-5-3{
-       background: #0496FF;
+       background: var(--blue);
    }
 
    @keyframes loader-5 {
@@ -266,7 +280,7 @@ to{
    
    @keyframes star {
        from{
-           color:#FF0000;
+           color:var(--red);
            transform: rotate(0);
        }
        to{
@@ -281,26 +295,24 @@ to{
     position: relative;
     border-bottom: solid 1px #FCEFEF;
     border-radius: 50px;
-    box-shadow: inset 5px 10px 10px #0496FF; 
+    box-shadow: inset 5px 10px 10px var(--blue); 
 
 }
 .item-7-1{
     width: 40px;
     height: 20px;
     position: absolute; 
-    background: #fff;
-    border: solid 1px black;
+    background: var(--red);
+    border: solid 1px transparent;
     border-radius: 50px;
     box-shadow: 0px 0px 5px;
     animation: loader-7 2s infinite backwards; 
 }
  @keyframes loader-7 {
     from{
-        /* transform: rotate(0); */
          left:0;
     }
     to{
-        /* transform: rotate(360deg); */
         left: calc(100% - 40px);
     }
  }
@@ -309,21 +321,21 @@ to{
     width: 90%;
     height: 20px;
     position: relative;
+    border: solid 1px var(--secondary-color);
     border-radius: 50px;
+    
  }
  .item-8-1{
     width: 50px;
     height: 20px;
     position: absolute; 
     left: 0; 
-    /* z-index: 1; */
     background:#fff!important;
     border-radius: 50px;
     animation: loader-8-1 5s linear infinite backwards ; 
  }
  .container-8 .item-8-2{
     position: relative;
-    /* z-index: 0; */
  }
 .item-8-2 .loading-l{
     position: relative;
@@ -364,29 +376,28 @@ to{
     width: 50px;
     height: 50px;
     position: relative;
-    border: solid 1px #fff;
+    border: solid 1px var(--blue);
     animation: loader 2s linear infinite backwards;
 }
 .item-9-1{
     width: 50px;
     height: 50px;
     position: absolute;
-    border: solid 1px #000;
+    border: solid 1px var(--red);
     transform: rotate(45deg);
-    /* animation: loader 2s infinite backwards; */
 }
 .item-9-2{
     width: 20px;
     height: 20px;
     position: absolute;
     border-radius: 50%;
-    background: #000;
+    background: #fff;
 }
 
 .item-10-1,.item-10-2,.item-10-3{
     width: 50px;
     height: 50px;
-    background: rgb(255,193,7);
+    background: var(--blue);
     margin: 5px;
     transform: rotate(45deg);
     animation: loader-10 2s linear infinite alternate;
@@ -467,7 +478,7 @@ to{
 .bat-1,.bat-2,.bat-3,.bat-4{
     width: 100%;
     height: 100%;
-    background: #0CCA4A; 
+    background: var(--blue); 
 }
 .item-12-1 .bat-1{
     animation: loader-12 2s 0.2s infinite linear;
@@ -483,7 +494,7 @@ to{
 }
 @keyframes loader-12 {
     0%{
-        background:#0CCA4A ;
+        background:var(--blue) ;
     }
     
     50%{
@@ -497,17 +508,12 @@ to{
     width: 100%;
     position: relative;
 }
-/* .item-13-0-1{
-
-
-     
-} */
 .item-13-1{
     width: 50px;
     height: 50px;
     position:absolute;
     left: 0;
-    background: #000; 
+    background: var(--red); 
     border-radius: 50%;  
     animation: loader-13-1 2s infinite linear;
 }
@@ -543,9 +549,9 @@ to{
        height: 150px;
        position: relative;
        bottom: 0px;
+       background:var(--primary-color) ;
+       opacity: 0.6;
        font-family: astonpoliz;
-       /* background:#50514F; */
-   
    }
    footer .reseauSociaux{
        width: 70%;
