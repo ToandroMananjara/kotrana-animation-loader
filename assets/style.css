@@ -411,6 +411,7 @@ to{
     border-radius: 50%;
     animation: loader-11 2s infinite backwards; 
     animation-delay: 1.4s;
+    margin-bottom: -50px;
 }
  .item-11-1{
     width: 150px;
@@ -495,7 +496,51 @@ to{
         background: none;
     } 
 }
+.container-13{
+    width: 100%;
+    position: relative;
+}
+/* .item-13-0-1{
 
+
+     
+} */
+.item-13-1{
+    width: 50px;
+    height: 50px;
+    position:absolute;
+    left: 0;
+    background: #000; 
+    border-radius: 50%;  
+    animation: loader-13-1 2s infinite linear;
+}
+.item-13-2{
+    width: 50px;
+    height:50px;
+    position: absolute;
+    right: 0;
+    background:#fff;
+    border-radius: 50%;
+    animation: loader-13-2 2s infinite linear;
+
+}
+
+@keyframes loader-13-1 {
+    from{
+       left: 0;
+    }
+    to{
+       left: calc(50% - 50px);
+    }
+}
+@keyframes loader-13-2 {
+    from{
+        right: 0;
+    }
+    to{
+       right: calc(50% - 50px);
+    }
+}
    footer{
        width: 100%;
        height: 150px;
