@@ -411,6 +411,7 @@ to{
     to{
         transform: rotate(360deg);
         border-radius: 50%;
+        background: var(--red);
     }
 }
 .container-11{
@@ -534,7 +535,7 @@ to{
        left: 0;
     }
     to{
-       left: calc(50% - 50px);
+       left: calc(50% - 48px);
     }
 }
 @keyframes loader-13-2 {
@@ -542,7 +543,7 @@ to{
         right: 0;
     }
     to{
-       right: calc(50% - 50px);
+       right: calc(50% - 48px);
     }
 }
 
