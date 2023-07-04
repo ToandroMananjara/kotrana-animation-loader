@@ -401,6 +401,55 @@ to{
         border-radius: 50%;
     }
 }
+.container-11{
+    width: 200px;
+    height: 200px;
+    position: relative;
+    bottom: -25%;
+    border:solid 20px transparent;
+    border-top: solid 20px #fff;
+    border-radius: 50%;
+    animation: loader-11 2s infinite backwards; 
+    animation-delay: 1.4s;
+}
+ .item-11-1{
+    width: 150px;
+    height: 150px;
+    position: relative;
+    border:solid 20px transparent;
+    border-top: solid 20px #fff;
+    border-radius: 50%;
+    animation: loader-11 2s infinite backwards;
+    animation-delay: 1s;
+} 
+.item-11-2{
+    width: 100px;
+    height: 100px;
+    position: relative;
+    border:solid 20px transparent;
+    border-top: solid 20px #fff;
+    border-radius: 50%;
+    animation: loader-11 2s infinite backwards; 
+    animation-delay: 0.8s;
+}
+.item-11-3{
+    width: 50px;
+    height: 50px;
+    position: relative;
+    border:solid 20px transparent;
+    border-top: solid 20px #fff;
+    border-radius: 50%;
+    animation: loader-11 2s infinite backwards; 
+    animation-delay: 0.4s;
+}
+@keyframes loader-11 {
+    from{
+        border-top-color:transparent ;
+    }
+    to{
+        border-top-color:#fff ;
+    }
+}
    footer{
        width: 100%;
        height: 150px;
