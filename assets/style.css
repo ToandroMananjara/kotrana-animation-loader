@@ -564,14 +564,61 @@ to{
     background: var(--blue);
 }
 
-.item-10-1,.item-10-2,.item-10-3{
-    width: 50px;
-    height: 50px;
+.container-15{
+    width: 100px;
+    height: 100px;
+    position: relative;
     background: var(--blue);
-    margin: 5px;
-    transform: rotate(45deg);
-    animation: loader-10 2s linear infinite alternate;
+    border-radius: 50%;
+    padding: 1px;
+    /* animation: loader 5s infinite linear; */
 }
+.item-15-1,.item-15-2,.item-15-3,.item-15-4,.item-15-5{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    background: var(--red);
+    border-radius: 50%;
+}
+.item-15-1{
+    top:0px;  
+    animation: loader-15-1 2s infinite linear;  
+}
+
+@keyframes loader-15-1 {
+    0%{
+        transform: translateX(40px) translateY(40px);
+    }
+    25%{
+        transform: translateY(80px);
+    }
+    50%{
+        transform: translateX(-40px) translateY(40px);
+    }
+    75%{
+        transform: translateY(0);
+    }
+    100%{
+        transform: translateX(40px) translateY(40px);
+    }
+}
+
+@keyframes loader-15-3 {
+    from{
+        left:0;
+    }
+    to{
+        left:calc(50% - 5px);
+    }
+}
+@keyframes loader-15-4 {
+    from{
+        right:0;
+    }
+    to{
+        right:calc(50% - 5px);
+    }
+} */
    footer{
        width: 100%;
        height: 150px;
